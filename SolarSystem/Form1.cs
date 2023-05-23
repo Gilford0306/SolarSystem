@@ -26,6 +26,11 @@ namespace SolarSystem
 
         int px = 500, py = 500, dst = 50;
 
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            timer1.Interval = trackBar1.Value;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
